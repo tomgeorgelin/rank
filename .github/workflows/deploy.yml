@@ -1,6 +1,8 @@
 on: push
 name: 🚀 Deploy website on push
 jobs:
+    environment: deploy
+
     web-deploy:
         name: 🎉 Deploy
         runs-on: ubuntu-latest
@@ -14,7 +16,6 @@ jobs:
                   node-version: '19'
 
             - name: 🔨 Build Project
-              environment: deploy
               env:
                   REACT_APP_API_KEY: ${{secrets.REACT_APP_API_KEY}}
                   REACT_APP_AUTH_DOMAIN: ${{secrets.REACT_APP_AUTH_DOMAIN}}
