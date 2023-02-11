@@ -19,7 +19,6 @@ const firebaseConfig = {
 	appId: process.env.REACT_APP_APP_ID,
 };
 
-console.log(firebaseConfig);
 const files = [
 	'cat--1.png',
 	'cat--2.png',
