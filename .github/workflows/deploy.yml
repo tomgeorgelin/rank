@@ -14,6 +14,7 @@ jobs:
                   node-version: '19'
 
             - name: 🔨 Build Project
+              environment: deploy
               env:
                   REACT_APP_API_KEY: ${{secrets.REACT_APP_API_KEY}}
                   REACT_APP_AUTH_DOMAIN: ${{secrets.REACT_APP_AUTH_DOMAIN}}
