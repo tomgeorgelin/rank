@@ -79,7 +79,6 @@ function App() {
 				};
 			})
 			.reduce((a, b) => (a.value > b.value ? a : b));
-		console.log(res);
 		setResult(res);
 	};
 
@@ -90,7 +89,6 @@ function App() {
 	};
 
 	const handleLeft = async () => {
-		console.log(files[random1]);
 		const leftDoc = doc(db, 'rank', files[random1]);
 		const rightDoc = doc(db, 'rank', files[random2]);
 		await setDoc(
@@ -112,7 +110,6 @@ function App() {
 	};
 
 	const handleRight = async () => {
-		console.log(files[random2]);
 		const leftDoc = doc(db, 'rank', files[random1]);
 		const rightDoc = doc(db, 'rank', files[random2]);
 		await setDoc(
