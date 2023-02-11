@@ -1,0 +1,20 @@
+.App {
+	text-align: center;
+}
+body {
+	background-color: #4b89cc;
+}
+
+button {
+	border: solid 2px white;
+	padding: 0.8em 0.5em 0.8em 0.5em;
+	border-radius: 5px;
+	background-color: #4b89cc;
+	margin: 2em;
+	color: white;
+	cursor: pointer;
+}
+
+img {
+	filter: drop-shadow(2px 1px 5px black);
+}
